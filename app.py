@@ -5,7 +5,7 @@ from prediction import predict
 
 
 st.title('Classifying Iris Flowers')
-st.markdown('Toy model to play to classify iris flowers into \
+st.markdown('model to play to classify iris flowers into \
      (setosa, versicolor, virginica) based on their sepal/petal \
     and length/width.')
 
@@ -27,10 +27,3 @@ if st.button("Predict type of Iris"):
     result = predict(
         np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
     st.text(result[0])
-
-
-st.text('')
-st.text('')
-st.markdown(
-    '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
-         `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
